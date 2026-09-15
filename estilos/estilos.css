@@ -1,5 +1,13 @@
+:root {
+    --cor-do-titulo: darkblue;
+    --largura-da-imagem: 150px;
+    --borda-da-imagem: 1px solid black;
+    --sombra-da-imagem: 0 0 30px gray;
+    --padding: 2px;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-do-titulo);
     padding: 10px;
 }
 
@@ -10,15 +18,15 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-do-titulo);
 }
 
 img {
-    width: 150px;
+    width: var(--largura-da-imagem);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--borda-da-imagem);
+    padding: var(--padding);
+    box-shadow: var(--sombra-da-imagem);
 }
 
 main {
@@ -42,11 +50,11 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: var(--largura-da-imagem);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--borda-da-imagem);
+    padding: var(--padding);
+    box-shadow: var(--sombra-da-imagem);
 }
 
 p {
