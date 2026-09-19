@@ -1,14 +1,14 @@
 :root {
-    --cor-primaria: #023047;
-    --cor-secundaria: #219ebc;
-    --cor-destaque1: #8ecae6;
-    --cor-destaque2: #ffb703;
+    --cor-primaria: #173F35;
+    --cor-secundaria: #2F6F5E;
+    --cor-destaque1: #6B8F71;
+    --cor-destaque2: #D8C3A5;
     --fonte-titulo: "Times New Roman", "Georgia", serif;
     --fonte-body: Arial, helvetica, sans-serif;
 }
 
 header {
-    background-color: var(--cor-secundaria);
+    background-color: #fff;
     color: var(--cor-primaria);
 }
 
@@ -20,8 +20,8 @@ header {
 
 body {
     font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
-    background-color: #f8f9fa;
+    color: var(--cor-primaria);
+    background-color: #F7F4ED;
 }
 
 header,
