@@ -1,21 +1,5 @@
-/* Resetar CSS do meu projeto */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --cor-do-titulo: darkblue;
-    --largura-da-imagem: 150px;
-    --borda-da-imagem: 1px solid black;
-    --sombra-da-imagem: 0 0 30px gray;
-    --padding: 2px;
-}
-
 nav {
-    background-color: var(--cor-do-titulo);
+    background-color: darkblue;
     padding: 10px;
 }
 
@@ -26,15 +10,15 @@ nav a {
 }
 
 h1 {
-    color: var(--cor-do-titulo);
+    color: darkblue;
 }
 
 img {
-    width: var(--largura-da-imagem);
+    width: 150px;
     height: auto;
-    border: var(--borda-da-imagem);
-    padding: var(--padding);
-    box-shadow: var(--sombra-da-imagem);
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 main {
@@ -43,8 +27,13 @@ main {
 
 aside {
     width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    /* 1️⃣ */
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
-    position: relative;
 }
 
 aside img {
@@ -53,19 +42,11 @@ aside img {
 }
 
 main img {
-    width: var(--largura-da-imagem);
+    width: 150px;
     height: auto;
-    border: var(--borda-da-imagem);
-    padding: var(--padding);
-    box-shadow: var(--sombra-da-imagem);
-    float: right;
-
-}
-
-aside h2 {
-    position: absolute;
-    left: 30px;
-    right: 20px
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 p {
@@ -76,17 +57,4 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
-}
-
-/* Seletores de Classe */
-.caixa {
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-}
-
-.indentacao {
-    padding-left: 2rem;
 }
