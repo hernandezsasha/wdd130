@@ -1,5 +1,21 @@
+/* Resetar CSS do meu projeto */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-do-titulo: darkblue;
+    --largura-da-imagem: 150px;
+    --borda-da-imagem: 1px solid black;
+    --sombra-da-imagem: 0 0 30px gray;
+    --padding: 2px;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-do-titulo);
     padding: 10px;
 }
 
@@ -10,15 +26,15 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-do-titulo);
 }
 
 img {
-    width: 150px;
+    width: var(--largura-da-imagem);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--borda-da-imagem);
+    padding: var(--padding);
+    box-shadow: var(--sombra-da-imagem);
 }
 
 main {
@@ -27,13 +43,8 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1️⃣ */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -42,11 +53,19 @@ aside img {
 }
 
 main img {
-    width: 150px;
+    width: var(--largura-da-imagem);
     height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+    border: var(--borda-da-imagem);
+    padding: var(--padding);
+    box-shadow: var(--sombra-da-imagem);
+    float: right;
+
+}
+
+aside h2 {
+    position: absolute;
+    left: 30px;
+    right: 20px
 }
 
 p {
@@ -57,4 +76,18 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe */
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    ;
+    color: #333;
+}
+
+.indentacao {
+    padding-left: 2rem;
 }
