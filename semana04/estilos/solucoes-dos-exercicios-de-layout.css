@@ -23,12 +23,12 @@ div {
 
 .flex {
     background-color: #aba;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex;
+    justfy-content: center;
+    align-items: center; */
 }
 
-.grid {
+i .grid {
     background-color: #abb;
     display: grid;
     place-items: center;
@@ -51,7 +51,8 @@ div {
 }
 
 .columns-3 {
-    grid-column: span 3;}
+    grid-column: span 3;
+}
 
 .tres {
     margin: .25rem;
