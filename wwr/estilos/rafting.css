@@ -237,7 +237,7 @@ footer {
 }
 
 .formulario-contato button {
-    background-color: var(--cor-destaque1);
+    background-color: var(--cor-primaria);
     color: white;
     border: none;
     padding: 10px 20px;
